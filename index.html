@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para mi niña hermosa ❤</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Comic Sans MS';
+      background-color: #fefefe;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .portada {
+      width: 400px;
+      height: 600px;
+      background: repeating-linear-gradient(
+        0deg,
+        #d4ecff,
+        #d4ecff 30px,
+        #ffffff 30px,
+        #ffffff 60px
+      );
+      border: 10px solid #ffccdd;
+      border-left: 60px solid #ffccdd;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      cursor: pointer;
+    }
+    .titulo {
+      font-size: 2.5em;
+      color: #ff80aa;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: 4px;
+      margin-top: 10px;
+    }
+    .titulo span {
+      display: inline-block;
+      background-color: #ffe4f0;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin: 0 3px;
+      transform: rotate(-5deg);
+    }
+    .imagen {
+      width: 100px;
+      margin: 15px auto;
+      display: block;
+    }
+    .etiqueta {
+      width: 80%;
+      height: 50px;
+      margin: 20px auto;
+      border: 2px solid pink;
+      border-radius: 10px;
+      background-color: white;
+      line-height: 50px;
+      font-size: 1.1em;
+      color: #ff66aa;
+      text-align: center;
+    }
+    .decoracion {
+      position: absolute;
+      font-size: 2em;
+    }
+    .corazon {
+      color: #ff99cc;
+    }
+    .estrella {
+      color: #aeefff;
+    }
+    .inferior {
+      position: absolute;
+      bottom: 20px;
+      right: 30px;
+      font-size: 0.9em;
+      color: #f199c9;
+    }
+    #paginaInterior {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #ffffff;
+      z-index: 10;
+      justify-content: center;
+      align-items: center;
+    }
+    .cuaderno-abierto {
+      display: flex;
+      width: 800px;
+      height: 600px;
+      box-shadow: 0px 20px 30px rgba(0,0,0,0.2);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .hoja {
+      width: 400px;
+      height: 600px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #fff,
+        #fff 25px,
+        #ffc0cb4d 25px,
+        #ffc0cb4d 26px
+      );
+      border-left: 8px solid #ffb6d9;
+      border-right: 8px solid #ffb6d9;
+      padding: 30px;
+      font-size: 1em;
+      color: #555;
+      overflow-y: auto;
+    }
+    .hoja h2 {
+      color: #ff69b4;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .gif-cuaderno {
+      display: block;
+      width: 120px;
+      margin: 15px auto 0 auto;
+      border-radius: 15px;
+    }
+    .cerrar {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      background-color: white;
+      color: #ff69b4;
+      border: 2px solid pink;
+      border-radius: 10px;
+      padding: 8px 16px;
+      font-size: 1em;
+      cursor: pointer;
+      z-index: 20;
+    }
+    @media (max-width: 850px) {
+      .cuaderno-abierto {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+      }
+      .hoja {
+        width: 100%;
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="portada" id="portada" onclick="abrirCuaderno()">
+    <div class="titulo">
+      <span>N</span><span>O</span><span>T</span><span>E</span> BOOK
+    </div> 
+    <img class="imagen" src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG20.png" alt="Peluche Kawaii">
+    <div class="etiqueta">DEDICADO A GENJI</div> 
+    <img class="imagen" src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG43.png" alt="Sundae Kawaii">
+    <div class="decoracion corazon" style="top: 20px; left: 80px;">❤</div>
+    <div class="decoracion estrella" style="top: 50px; right: 50px;">★</div>
+    <div class="decoracion estrella" style="bottom: 80px; left: 40px;">★</div>
+    <div class="decoracion corazon" style="bottom: 60px; right: 80px;">❤</div>
+    <div class="inferior">hecho por jona</div>
+  </div>
+
+  <div id="paginaInterior">
+    <button class="cerrar" onclick="cerrarCuaderno()">✿ Cerrar</button>
+    <div class="cuaderno-abierto">
+      <div class="hoja">
+        <h2>✧ Te adoro mi princesita✧</h2>
+        <p> Odi mi niña preciosa, se que esto no es la gran cosa, tampoco es un regalo en fisico pero te lo hago con mucho amor y cariño mi amor, ya que por esta pequeña carta te expreso una pequeña parte de todo el amor que siento por ti porque de verdad mi amor, no sabes cuanto te adoro, no sabes cuanto te amo y eso es algo que nunca me cansaré de decirte ya que siempre que estes conmigo te diré y expresaré de todas las maneras posibles todo el amor que siento por ti mi amor. </p>
+        <h2>TE ADORO MÁS DE LO QUE TE IMAGINAS</h2> 
+        <img class="gif-cuaderno" src="https://www.icegif.com/wp-content/uploads/2025/09/hello-kitty-icegif-2.gif" alt="Hello Kitty GIF">
+      </div>
+      <div class="hoja"> 
+        <h2>✧¡FELIZ DÍA DE LA NOVIA OSITA!✧</h2> 
+        <p>Hoy en este día te quiero agradecer mi amor, por ser la mejor novia del mundo, por siempre estar para mi, y sobre todo, gracias por amarme siempre sin importar el que osita, de verdad te agradezco eso.</p>
+        <p>Mi niña hermosa, te amo, pero no es ese amor de adolescentes que va y nunca vuelve, te amo de tal manera que al estar contigo o con el simple hecho de escuchar tú nombre soy feliz, gracias mi amorcito por hacerme feliz siempre por siempre estar para mi amor, gracias por todo osita, recuerda mi niña, que ante mis ojos eres y siempre serás la niña mas hermosa del mundo, te amo demasiado mi princesita consentida. </p>
+        <p> Feliz día de la novia, amor mío. </p>
+        <p> Con amor,</p>
+        <p> isanitopro.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function abrirCuaderno() {
+      document.getElementById('portada').style.display = 'none';
+      document.getElementById('paginaInterior').style.display = 'flex';
+    }
+    function cerrarCuaderno() {
+      document.getElementById('paginaInterior').style.display = 'none';
+      document.getElementById('portada').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
